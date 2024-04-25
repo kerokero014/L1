@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-200 font-sans leading-normal tracking-normal">
+  <nav id="header" class="bg-white fixed w-full z-10 top-0 shadow" style="line-height: 1.5">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+      <div class="pl-4">
+        <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="#">
+          Lesson 1
+        </a>
+      </div>
+      <div class="block lg:hidden pr-4">
+        <button id="nav-toggle" class="flex items-center p-1 text-orange-800 hover:text-gray-900">
+          <svg class="fill-current h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+        id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+          <li class="mr-3">
+            <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Home</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              href="#">About Us</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-100 opacity-100" />
+  </nav>
+
+  <!--Hero page with Tailwindcss-->
+
+  <div class="pt-24">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <!--Left Col-->
+      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+        <p class="uppercase tracking-loose w-full">Lesson 01 - WDD430</p>
+        <h1 class="my-4 text-5xl font-bold leading-tight">
+          Main Hero Message to sell yourself!
+        </h1>
+        <p class="leading-normal text-2xl mb-8">
+          This is just a simple web lay out with Tailwindcss.
+        </p>
+        <button
+          class="mx-auto lg:mx-0 hover:underline bg-gray-800 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">
+          Subscribe
+        </button>
+      </div>
+      <!--Right Col-->
+      <div class="w-full md:w-3/5 py-6 text-center">
+        <img class="w-full md:w-4/5 z-50" src="https://source.unsplash.com/collection/1346951/800x600" />
+      </div>
+    </div>
+  </div>
+  
+  <div class="w-full max-w-xs mx-auto mt-20"">
+    <h1 class="text-center font-bold text-2xl mb-4">Sign Up</h1>
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+          Username
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="username" type="text" placeholder="Username" />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          Email
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="email" type="text" placeholder="Email" />
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+          Password
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+          id="password" type="password" placeholder="******************" />
+      </div>
+      <div class="flex items-center justify-between">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="button">
+          Sign Up
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="bg-white border-t border-gray-400 shadow">
+    <div class="container max-w-md mx-auto flex py-8">
+      <div class="w-full mx-auto flex flex-wrap">
+        <div class="flex w-full md:w-1/2">
+          <div class="px-8">
+            <h3 class="font-bold text-black">About</h3>
+            <p class="py-4 text-gray-600 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.
+            </p>
+          </div>
+        </div>
+        <div class="flex w-full md:w-1/2">
+          <div class="px-8">
+            <h3 class="font-bold text-black">Social</h3>
+            <ul class="list-reset items-center text-sm pt-3">
+              <li>
+                <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                  href="#">Instagram</a>
+                <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                  href="#">Facebook</a>
+                <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                  href="#">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="greeter.js"></script>
+
+</html>
